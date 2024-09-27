@@ -1,11 +1,11 @@
 <?php
 
-namespace Vendor\ArmenianPayments;
+namespace Abn\ArmenianPayments;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Vendor\ArmenianPayments\Skeleton\SkeletonClass
+ * @see \Abn\ArmenianPayments\Skeleton\SkeletonClass
  */
 class ArmenianPaymentsFacade extends Facade
 {

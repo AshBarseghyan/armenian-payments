@@ -1,9 +1,8 @@
 <?php
 
-namespace Vendor\ArmenianPayments;
+namespace Abn\ArmenianPayments;
 
 class ArmenianPayments
 {
-
-
+    // Build your next great package.
 }

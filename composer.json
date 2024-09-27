@@ -1,11 +1,11 @@
 {
-    "name": "vendor/armenian-payments",
+    "name": "abn/armenian-payments",
     "description": "Armenian payment methods in one place",
     "keywords": [
-        "vendor",
+        "abn",
         "armenian-payments"
     ],
-    "homepage": "https://github.com/vendor/armenian-payments",
+    "homepage": "https://github.com/abn/armenian-payments",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Vendor\\ArmenianPayments\\": "src"
+            "Abn\\ArmenianPayments\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Vendor\\ArmenianPayments\\Tests\\": "tests"
+            "Abn\\ArmenianPayments\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,10 +44,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Vendor\\ArmenianPayments\\ArmenianPaymentsServiceProvider"
+                "Abn\\ArmenianPayments\\ArmenianPaymentsServiceProvider"
             ],
             "aliases": {
-                "ArmenianPayments": "Vendor\\ArmenianPayments\\ArmenianPaymentsFacade"
+                "ArmenianPayments": "Abn\\ArmenianPayments\\ArmenianPaymentsFacade"
             }
         }
     }

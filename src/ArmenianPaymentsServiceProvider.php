@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\ArmenianPayments;
+namespace Abn\ArmenianPayments;
 
 use Illuminate\Support\ServiceProvider;
 

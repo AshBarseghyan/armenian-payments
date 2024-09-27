@@ -1,8 +1,8 @@
 # Very short description of the package
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/vendor/armenian-payments.svg?style=flat-square)](https://packagist.org/packages/vendor/armenian-payments)
-[![Total Downloads](https://img.shields.io/packagist/dt/vendor/armenian-payments.svg?style=flat-square)](https://packagist.org/packages/vendor/armenian-payments)
-![GitHub Actions](https://github.com/vendor/armenian-payments/actions/workflows/main.yml/badge.svg)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/abn/armenian-payments.svg?style=flat-square)](https://packagist.org/packages/abn/armenian-payments)
+[![Total Downloads](https://img.shields.io/packagist/dt/abn/armenian-payments.svg?style=flat-square)](https://packagist.org/packages/abn/armenian-payments)
+![GitHub Actions](https://github.com/abn/armenian-payments/actions/workflows/main.yml/badge.svg)
 
 This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
 
@@ -11,7 +11,7 @@ This is where your description should go. Try and limit it to a paragraph or two
 You can install the package via composer:
 
 ```bash
-composer require vendor/armenian-payments
+composer require abn/armenian-payments
 ```
 
 ## Usage
@@ -40,7 +40,7 @@ If you discover any security related issues, please email ashbarseghyan99@gmail.
 
 ## Credits
 
--   [ABN](https://github.com/vendor)
+-   [ABN](https://github.com/abn)
 -   [All Contributors](../../contributors)
 
 ## License

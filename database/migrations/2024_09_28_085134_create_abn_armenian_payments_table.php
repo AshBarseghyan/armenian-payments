@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->text('payment_response')->nullable();
             $table->enum('payment_status', ['new', 'pending', 'failed', 'success']);
+            $table->string('payment_method');
             $table->timestamps();
         });
     }

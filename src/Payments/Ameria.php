@@ -2,18 +2,23 @@
 
 namespace Abn\ArmenianPayments\Payments;
 
+use App\Models\AbnArmenianPayments;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 
 class Ameria
 {
+
+    public $payment_method_slug = 'ameria';
+
     public function __construct()
     {
         //
     }
 
-    public function createPayment()
+    public function createPayment($amount, $currency)
     {
+        #TODO: add validation for amount and currency
 
         //check env variables
         if (!env('AMERIA_CLIENT_ID')) {
@@ -35,14 +40,20 @@ class Ameria
             ];
         }
 
+        $order = AbnArmenianPayments::create([
+            'amount' => $amount,
+            'currency' => $currency,
+            'payment_method' => $this->payment_method_slug,
+        ]);
+
         $data = [
             'ClientID' => env('AMERIA_CLIENT_ID'),
             'Username' => env('AMERIA_USERNAME'),
             'Password' => env('AMERIA_PASSWORD'),
-            'Currency' => 'AMD',
+            'Currency' => $currency,
             'Description' => 'Visa,Mastercard,ArCA',
-            'OrderID' => 1, #TODO: add OrderID
-            'Amount' => 100, #TODO: add Amount
+            'OrderID' => $order->id,
+            'Amount' => $amount,
             'BackURL' => '', #TODO: add BackURL
             'Opaque' => '' #TODO: add Opaque
         ];

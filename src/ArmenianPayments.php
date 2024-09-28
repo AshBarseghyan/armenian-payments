@@ -17,7 +17,7 @@ class ArmenianPayments
     }
 
 
-    public function makePayment()
+    public function makePayment(): array
     {
         switch ($this->payment_method) {
             case 'ameria':

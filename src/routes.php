@@ -2,11 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::prefix('api')->middleware('api')->group(function () {
-    Route::post('payment-ameria-callback', function () {
-        $data = request()->all();
-        Log::info('Ameria Callback', $data);
+Route::middleware('web')->group(function () {
+    Route::get('/abn-armenian-payments/success', function () {
+        return view('abn-armenian-payments::success');
+    })->name('abn-armenian-payments.success');
 
-        return response()->json(['status' => 'success']);
-    });
+    Route::get('/abn-armenian-payments/fail', function () {
+        return view('abn-armenian-payments::fail');
+    })->name('abn-armenian-payments.fail');
+
+    Route::get('payment-ameria-callback', [\Abn\ArmenianPayments\Payments\Ameria::class, 'callback'])->name('abn-armenian-payments.ameria.callback');
 });

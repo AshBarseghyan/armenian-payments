@@ -14,6 +14,11 @@ class ArmenianPaymentsServiceProvider extends ServiceProvider
         /*
          * Optional methods to load your package assets
          */
+
+        $this->publishes([
+            __DIR__.'/../public' => public_path('vendor/your-package'),
+        ], 'public');
+
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'armenian-payments');
          $this->loadViewsFrom(__DIR__.'/../resources/views', 'armenian-payments');
          $this->loadMigrationsFrom(__DIR__.'/../database/migrations');

@@ -75,7 +75,7 @@
 <body>
 
 <div class="container">
-    <img src="{{asset('images/success.png')}}" alt="success">
+    <img src="{{asset('images/abn-armenian-payments/payment_success.png')}}" alt="Success">
     <h2 class="dsd">Thank you</h2>
     <p>Payment was successful</p>
     <a href="{{url('/')}}">Home</a>

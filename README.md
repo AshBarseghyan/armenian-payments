@@ -17,7 +17,8 @@ composer require abn/armenian-payments
 ## Usage
 
 ```php
-// Usage description here
+php artisan vendor:publish --tag=public
+
 ```
 
 ### Testing

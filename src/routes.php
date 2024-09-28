@@ -11,5 +11,5 @@ Route::middleware('web')->group(function () {
         return view('armenian-payments::fail');
     })->name('abn-armenian-payments.fail');
 
-    Route::get('payment-ameria-callback', [\Abn\ArmenianPayments\Payments\Ameria::class, 'callback'])->name('abn-armenian-payments.ameria.callback');
+    Route::get('/abn-payment-ameria-callback', [\Abn\ArmenianPayments\Payments\Ameria::class, 'callback'])->name('abn-armenian-payments.ameria.callback');
 });

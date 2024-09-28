@@ -75,7 +75,7 @@
 <body>
 
 <div class="container">
-    <img src="{{asset('assets/images/global/payment_fail.png')}}" alt="Success">
+    <img src="{{asset('images/abn-armenian-payments/payment_fail.png')}}" alt="Fail">
     <h2>ERROR</h2>
     <p>Payment failed</p>
     <a href="{{url('/')}}">Back to Home</a>

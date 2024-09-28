@@ -1,10 +1,9 @@
-# Very short description of the package
+# A simple package for Armenian payments
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/abn/armenian-payments.svg?style=flat-square)](https://packagist.org/packages/abn/armenian-payments)
 [![Total Downloads](https://img.shields.io/packagist/dt/abn/armenian-payments.svg?style=flat-square)](https://packagist.org/packages/abn/armenian-payments)
-![GitHub Actions](https://github.com/abn/armenian-payments/actions/workflows/main.yml/badge.svg)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+Use this package to integrate Armenian payment gateways in your Laravel application.
 
 ## Installation
 
@@ -14,7 +13,7 @@ You can install the package via composer:
 composer require abn/armenian-payments
 ```
 
-## Usage
+## Publish assets
 
 ```php
 php artisan vendor:publish --tag=public
@@ -41,13 +40,9 @@ If you discover any security related issues, please email ashbarseghyan99@gmail.
 
 ## Credits
 
--   [ABN](https://github.com/abn)
--   [All Contributors](../../contributors)
+- [ABN](https://github.com/abn)
+- [All Contributors](../../contributors)
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-## Laravel Package Boilerplate
-
-This package was generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).

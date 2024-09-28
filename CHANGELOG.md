@@ -1,7 +1,2 @@
-# Changelog
-
-All notable changes to `armenian-payments` will be documented in this file
-
-## 1.0.0 - 201X-XX-XX
-
-- initial release
+# Package is under development
+- [ ] U will be able to see the changes in the CHANGELOG.md file in the future

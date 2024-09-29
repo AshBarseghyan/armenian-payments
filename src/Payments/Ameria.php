@@ -2,7 +2,7 @@
 
 namespace Abn\ArmenianPayments\Payments;
 
-use App\Models\AbnArmenianPayments;
+use Abn\ArmenianPayments\Models\AbnArmenianPayments;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Request;
@@ -54,6 +54,7 @@ class Ameria
         }
 
         $order = AbnArmenianPayments::create([
+            'language' => app()->getLocale(),
             'amount' => $amount,
             'currency' => $currency,
             'payment_method' => $this->payment_method_slug,
